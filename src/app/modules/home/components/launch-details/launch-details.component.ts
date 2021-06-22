@@ -11,9 +11,8 @@ export class LaunchDetailsComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    debugger;
     this.activatedRoute.paramMap.subscribe( params => {
-      console.log('pepe', params);
+      console.log(params);
     });
   }
 
